@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Semigroup :: * -> Constraint
 /// - Laws:
 ///   - x <> (y <> z) = (x <> y) <> z
 public protocol Semigroup {

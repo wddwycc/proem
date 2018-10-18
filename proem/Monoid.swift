@@ -9,6 +9,7 @@
 import Foundation
 
 
+/// Monoid :: * -> Constraint
 /// - Laws:
 ///   - x <> mempty = x
 ///   - mempty <> x = x
@@ -17,17 +18,17 @@ public protocol Monoid: Semigroup {
     static func identity () -> Self
 }
 
-/// mempty :: a
+/// mempty :: Monoid a => a
 public func mempty<T: Monoid>(_ type: T.Type) -> T {
     return T.identity()
 }
 
-/// mappend :: a -> a -> a
+/// mappend :: Monoid a => a -> a -> a
 public func mappend<T: Monoid>(_ lhs: T, _ rhs: T) -> T {
     return lhs <> rhs
 }
 
-/// mconcat :: [a] -> a
+/// mconcat :: Monoid a => [a] -> a
 public func mconcat<T: Monoid>(_ monoids: [T]) -> T {
     return monoids.reduce(mempty(T.self), <>)
 }

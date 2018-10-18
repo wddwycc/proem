@@ -14,6 +14,8 @@
 		07D326342178A7C1004EE420 /* proemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D326332178A7C1004EE420 /* proemTests.swift */; };
 		07D326362178AADC004EE420 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D326352178AADC004EE420 /* Monoid.swift */; };
 		07D3263A2178AB76004EE420 /* mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D326382178AB76004EE420 /* mocks.swift */; };
+		07D3263C2178BBD8004EE420 /* Functor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3263B2178BBD8004EE420 /* Functor.swift */; };
+		07D3263E2178D161004EE420 /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3263D2178D161004EE420 /* Maybe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		07D326332178A7C1004EE420 /* proemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proemTests.swift; sourceTree = "<group>"; };
 		07D326352178AADC004EE420 /* Monoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
 		07D326382178AB76004EE420 /* mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mocks.swift; sourceTree = "<group>"; };
+		07D3263B2178BBD8004EE420 /* Functor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functor.swift; sourceTree = "<group>"; };
+		07D3263D2178D161004EE420 /* Maybe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maybe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				07D326162178A38A004EE420 /* proem.h */,
-				07D3262D2178A3BB004EE420 /* Semigroup.swift */,
+				07D3263B2178BBD8004EE420 /* Functor.swift */,
+				07D3263D2178D161004EE420 /* Maybe.swift */,
 				07D326352178AADC004EE420 /* Monoid.swift */,
 				07D326302178A59D004EE420 /* Operators.swift */,
+				07D3262D2178A3BB004EE420 /* Semigroup.swift */,
 				07D326172178A38A004EE420 /* Info.plist */,
 			);
 			path = proem;
@@ -208,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D326362178AADC004EE420 /* Monoid.swift in Sources */,
+				07D3263C2178BBD8004EE420 /* Functor.swift in Sources */,
+				07D3263E2178D161004EE420 /* Maybe.swift in Sources */,
 				07D3262E2178A3BB004EE420 /* Semigroup.swift in Sources */,
 				07D326312178A59D004EE420 /* Operators.swift in Sources */,
 			);
