@@ -25,3 +25,4 @@ extension Maybe: Functor {
     }
 }
 
+extension Maybe: Equatable where T: Equatable {}
