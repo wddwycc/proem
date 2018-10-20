@@ -14,5 +14,10 @@ import Foundation
 ///   - fmap id == id
 ///   - fmap (f . g) == fmap f . fmap g
 public protocol Functor {
-    associatedtype A
+    /// (* -> *)
+    associatedtype FunctorT: Functor = Self
+    /// *
+    associatedtype FunctorTT
+    /// fmap
+    func map<T>(_ transform: ((FunctorTT) -> T)) -> FunctorT where FunctorT.FunctorTT == T
 }

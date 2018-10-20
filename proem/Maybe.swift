@@ -9,17 +9,19 @@
 import Foundation
 
 
-public enum Maybe<T>: Functor {
-    public typealias A = T
+public enum Maybe<T> {
     case just(T)
     case nothing
 }
 
-public func fmap<T, U>(_ transform: ((T) -> U), _ functor: Maybe<T>) -> Maybe<U> {
-    switch functor {
-    case .nothing:
-        return .nothing
-    case .just(let v):
-        return .just(transform(v))
+extension Maybe: Functor {
+    public typealias FunctorTT = T
+    public func map<U>(_ transform: ((T) -> U)) -> Maybe<U> {
+        switch self {
+        case .nothing: return .nothing
+        case .just(let v):
+            return .just(transform(v))
+        }
     }
 }
+
