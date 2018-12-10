@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D3261D2178A38B004EE420 /* proem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D326132178A38A004EE420 /* proem.framework */; };
+		07D3261D2178A38B004EE420 /* Preom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D326132178A38A004EE420 /* Preom.framework */; };
 		07D326242178A38B004EE420 /* proem.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D326162178A38A004EE420 /* proem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07D3262E2178A3BB004EE420 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3262D2178A3BB004EE420 /* Semigroup.swift */; };
 		07D326312178A59D004EE420 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D326302178A59D004EE420 /* Operators.swift */; };
@@ -27,10 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07D326132178A38A004EE420 /* proem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = proem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D326132178A38A004EE420 /* Preom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Preom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D326162178A38A004EE420 /* proem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proem.h; sourceTree = "<group>"; };
 		07D326172178A38A004EE420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07D3261C2178A38B004EE420 /* proemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D3261C2178A38B004EE420 /* PreomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D326232178A38B004EE420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D3262D2178A3BB004EE420 /* Semigroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
 		07D326302178A59D004EE420 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D3261D2178A38B004EE420 /* proem.framework in Frameworks */,
+				07D3261D2178A38B004EE420 /* Preom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +70,8 @@
 		07D326142178A38A004EE420 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07D326132178A38A004EE420 /* proem.framework */,
-				07D3261C2178A38B004EE420 /* proemTests.xctest */,
+				07D326132178A38A004EE420 /* Preom.framework */,
+				07D3261C2178A38B004EE420 /* PreomTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +112,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		07D326122178A38A004EE420 /* proem */ = {
+		07D326122178A38A004EE420 /* Preom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07D326272178A38B004EE420 /* Build configuration list for PBXNativeTarget "proem" */;
+			buildConfigurationList = 07D326272178A38B004EE420 /* Build configuration list for PBXNativeTarget "Preom" */;
 			buildPhases = (
 				07D3260E2178A38A004EE420 /* Headers */,
 				07D3260F2178A38A004EE420 /* Sources */,
@@ -125,14 +125,14 @@
 			);
 			dependencies = (
 			);
-			name = proem;
+			name = Preom;
 			productName = proem;
-			productReference = 07D326132178A38A004EE420 /* proem.framework */;
+			productReference = 07D326132178A38A004EE420 /* Preom.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		07D3261B2178A38B004EE420 /* proemTests */ = {
+		07D3261B2178A38B004EE420 /* PreomTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07D3262A2178A38B004EE420 /* Build configuration list for PBXNativeTarget "proemTests" */;
+			buildConfigurationList = 07D3262A2178A38B004EE420 /* Build configuration list for PBXNativeTarget "PreomTests" */;
 			buildPhases = (
 				07D326182178A38B004EE420 /* Sources */,
 				07D326192178A38B004EE420 /* Frameworks */,
@@ -143,9 +143,9 @@
 			dependencies = (
 				07D3261F2178A38B004EE420 /* PBXTargetDependency */,
 			);
-			name = proemTests;
+			name = PreomTests;
 			productName = proemTests;
-			productReference = 07D3261C2178A38B004EE420 /* proemTests.xctest */;
+			productReference = 07D3261C2178A38B004EE420 /* PreomTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07D3260D2178A38A004EE420 /* Build configuration list for PBXProject "proem" */;
+			buildConfigurationList = 07D3260D2178A38A004EE420 /* Build configuration list for PBXProject "Preom" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -179,8 +179,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07D326122178A38A004EE420 /* proem */,
-				07D3261B2178A38B004EE420 /* proemTests */,
+				07D326122178A38A004EE420 /* Preom */,
+				07D3261B2178A38B004EE420 /* PreomTests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,7 +227,7 @@
 /* Begin PBXTargetDependency section */
 		07D3261F2178A38B004EE420 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07D326122178A38A004EE420 /* proem */;
+			target = 07D326122178A38A004EE420 /* Preom */;
 			targetProxy = 07D3261E2178A38B004EE420 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07D3260D2178A38A004EE420 /* Build configuration list for PBXProject "proem" */ = {
+		07D3260D2178A38A004EE420 /* Build configuration list for PBXProject "Preom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07D326252178A38B004EE420 /* Debug */,
@@ -458,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07D326272178A38B004EE420 /* Build configuration list for PBXNativeTarget "proem" */ = {
+		07D326272178A38B004EE420 /* Build configuration list for PBXNativeTarget "Preom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07D326282178A38B004EE420 /* Debug */,
@@ -467,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07D3262A2178A38B004EE420 /* Build configuration list for PBXNativeTarget "proemTests" */ = {
+		07D3262A2178A38B004EE420 /* Build configuration list for PBXNativeTarget "PreomTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07D3262B2178A38B004EE420 /* Debug */,
