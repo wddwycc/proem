@@ -27,9 +27,4 @@ class semigroupTests: XCTestCase {
         // TODO: mconcat = foldr <> mempty
         // XCTAssertEqual(mconcat([Sum(1), Sum(2), Sum(3)]), Sum(6) <> mempty(Sum.self))
     }
-
-    func testFunctor() {
-        XCTAssertEqual(Maybe.just(10).map { $0 + 3 }, Maybe.just(13))
-    }
-
 }
